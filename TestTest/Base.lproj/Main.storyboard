@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OhH-lv-lxa">
+                                <rect key="frame" x="188.5" y="431" width="37" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="計算"/>
+                                <connections>
+                                    <action selector="btnRun:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KU1-lC-MAp"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="63V-T2-CMb">
+                                <rect key="frame" x="44" y="488" width="326" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jl-i5-Thn">
+                                <rect key="frame" x="186" y="545" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OhH-lv-lxa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0RQ-Ri-1kb"/>
+                            <constraint firstItem="6jl-i5-Thn" firstAttribute="top" secondItem="63V-T2-CMb" secondAttribute="bottom" constant="23" id="Amf-WX-Obh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="63V-T2-CMb" secondAttribute="trailing" constant="24" id="Kwf-cD-wPk"/>
+                            <constraint firstItem="63V-T2-CMb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="UUz-Xf-pas"/>
+                            <constraint firstItem="6jl-i5-Thn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cdK-aW-8GR"/>
+                            <constraint firstItem="63V-T2-CMb" firstAttribute="top" secondItem="OhH-lv-lxa" secondAttribute="bottom" constant="23" id="hJ3-t1-J7m"/>
+                            <constraint firstItem="OhH-lv-lxa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="on5-BI-jbc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lbl2Text" destination="6jl-i5-Thn" id="lLw-lU-NpR"/>
+                        <outlet property="lblText" destination="63V-T2-CMb" id="gFJ-yB-XXL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="78.348214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
